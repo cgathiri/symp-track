@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riara Cafe Menu</title>
+  <link rel="stylesheet" href="MenuStyles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Riara Cafe</h1>
+      <p>Welcome to the taste of Riara</p>
+    </div>
+  </header>
+
+  <!-- Navigation for Menu Filters -->
+  <nav class="menu-nav">
+    <button onclick="filterMenu('all')">All</button>
+    <button onclick="filterMenu('breakfast')">Breakfast</button>
+    <button onclick="filterMenu('lunch')">Lunch</button>
+    <button onclick="filterMenu('dessert')">Dessert</button>
+  </nav>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <!-- Sample Menu Item -->
+    <div class="menu-item breakfast">
+      <img src="path/to/breakfast-image.jpg" alt="Sample Image">
+      <h2>Pancakes</h2>
+      <div class="rating">
+        ★★★★★
+      </div>
+      <span class="price">KSH 500</span>
+      <button class="add-to-cart">🛒 Add to Cart</button>
+    </div>
+    <!-- Add additional menu items similarly -->
+  </section>
+
+  <script src="MenuScript.js"></script>
+</body>
+</html>

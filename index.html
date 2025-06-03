@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SympTrack</title>
+    <link rel="stylesheet" href="SympTrackStyles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SympTrack</h1>
+        <h4><em>Your relaible digital symptom tracking system</em></h4>
+        <form id="symptom-form">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+            <label for="description">Description:</label>
+            <input type="text" id="description" required>
+            <label for="severity">Severity (1-10):</label>
+            <input type="number" id="severity" min="1" max="10" required>
+            <label for="duration">Duration:</label>
+            <select id="duration" required>
+                <option value="Less than 1 minute">Less than 1 minute</option>
+                <option value="Less than 10 minutes">Less than 10 minutes</option>
+                <option value="Less than 30 minutes">Less than 30 minutes</option>
+                <option value="More than 30 minutes">More than 30 minutes</option>
+            </select>
+            <button type="submit">Log Symptom</button>
+        </form>
+        <h2>Logged Symptoms</h2>
+        <ul id="symptom-list"></ul>
+    </div>
+    <script src="SympTrackScript.js"></script>
+</body>
+</html>
